@@ -1,4 +1,4 @@
-# Vidly API
+# Vidly (Express) 
 
 A RESTful movie rental API built with **Node.js**, **Express**, and **MongoDB**. It supports user authentication, movie, genre, customer, and rental management with JWT-based authorization.
 
