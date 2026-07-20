@@ -1,17 +1,18 @@
 # Vidly API
 
-A RESTful movie rental backend built with **Node.js**, **Express**, and **MongoDB**. It provides authentication, authorization, CRUD operations, and rental management.
+A RESTful movie rental API built with **Node.js**, **Express**, and **MongoDB**. It supports user authentication, movie, genre, customer, and rental management with JWT-based authorization.
 
 ## Features
 
-- User authentication with JWT
-- Role-based authorization (Admin)
-- Movies, Genres, Customers & Rentals APIs
+- JWT Authentication & Authorization
+- User registration and login
+- CRUD operations for Movies, Genres, and Customers
+- Rental management
+- Input validation with Joi
 - Password hashing with bcrypt
-- Request validation using Joi
-- MongoDB with Mongoose
-- Error logging with Winston
+- Centralized error handling
 - Unit testing with Jest
+- Config-based environment management
 
 ## Tech Stack
 
@@ -20,20 +21,23 @@ A RESTful movie rental backend built with **Node.js**, **Express**, and **MongoD
 - MongoDB & Mongoose
 - JWT
 - Joi
+- bcrypt
 - Winston
 - Jest
 
 ## Installation
 
 ```bash
-git clone <repository-url>
+git clone <your-repo-url>
 cd vidly
 npm install
 ```
 
 ## Configuration
 
-Create the required environment variables (or update the `config` files), then start MongoDB.
+Create the required configuration files (or update the existing ones) inside the `config/` folder.
+
+Set your MongoDB connection string and JWT private key before running the application.
 
 ## Run
 
@@ -41,13 +45,13 @@ Create the required environment variables (or update the `config` files), then s
 node index.js
 ```
 
-For development:
+Or with Nodemon:
 
 ```bash
 npx nodemon index.js
 ```
 
-## Run Tests
+## Testing
 
 ```bash
 npm test
@@ -65,15 +69,15 @@ tests/
 index.js
 ```
 
-## API Resources
+## API Modules
 
 - Authentication
 - Users
-- Genres
 - Movies
+- Genres
 - Customers
 - Rentals
 
 ## License
 
-MIT
+This project is for learning and educational purposes.
